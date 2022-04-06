@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.629);
+        }
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+        input {
+            width: 12.3%;
+            border: 2px solid rgba(31, 3, 1, 0.84);
+            background-color: rgba(150, 186, 186, 0.749);
+            border-radius: 10px;
+        }
+
+        input:focus {
+            background-color: rgb(255, 255, 255);
+        }
+        .wrapper__item--primary { 
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            color: aliceblue;
+            font-size: 19px;
+            width: 30%;
+            border: 3px solid black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="wrapper__item">
+            <input type="number" name="number" value="1" id="myNumber">
+            <input type="button" value="Click Here" onclick="clickHere()">
+        </div>
+        <div class="wrapper__item--primary">
+            <p id="resultNumber"></p>
+            <p id="resultNumberPrime"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
